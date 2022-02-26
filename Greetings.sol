@@ -1,13 +1,14 @@
-pragma solidity ^0.4.23; 
+// SPDX-License-Identifier: GLP - 3.0
+pragma solidity ^0.8.7;
 
 contract Greetings{ 
-  string public message; 
+    string public message; 
 
-  constructor(string initialMessage) public { 
-    message = initialMessage;
-  }
+    constructor(string memory initialMessage) {
+        message = initialMessage;
+    }
 
-  function setMessage(string newMessage) public {
-    message = newMessage;
-  }
+    function setMessage(string memory newMessage) public {
+        message = newMessage;
+    }
 }
